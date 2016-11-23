@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300|Roboto|Playfair+Display:400,400i');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -21,4 +21,20 @@ section:nth-of-type(even) {
 
 .links a {
     display: inline-block;
+}
+
+.card-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.hero {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.logo {
+    height: 120px;
 }
