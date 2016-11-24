@@ -1,15 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300|Roboto|Playfair+Display:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300|Roboto|Playfair+Display:400,400i|Amiri:400,700,700i');
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+.arabic {
+    font-family: 'Amiri', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.bismillah {
+    font-size: 1.5em;
+}
+
+.footer-row > *,
 #ncua {
     height: 5.5em;
+    line-height: 5.5em;
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 section:nth-of-type(even) {
     background-color: #fff;
@@ -17,6 +29,10 @@ section:nth-of-type(even) {
 
 .jumbotron {
     margin-bottom: 0;
+}
+
+.links ul.nav {
+    column-count: 2;
 }
 
 .links a {
@@ -29,12 +45,31 @@ section:nth-of-type(even) {
 }
 
 .hero {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 2em;
 }
 
 .logo {
-    height: 120px;
+    max-height: 120px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        padding: 20px 0;
+    }
+
+    .hero {
+        font-size: 1em;
+    }
+
+    .links ul.nav {
+        column-count: 1;
+    }
+}
+
+nav.navbar {
+    background-color: #eee;
 }
